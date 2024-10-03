@@ -1,38 +1,110 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #284e46; /* Binghamton University green */
+  color: white;
+  padding: 0rem;
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 100px; /* Adjust size of the logo */
+  width: 350px;
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header h1 {
+  background-color: #9a9898; /* Greyish background */
+  padding: 150px;
+  text-align: left; /* Align text to the left */
+  color: white;
   display: flex;
-  flex-direction: column;
+  align-items: left; /* Align logo and text vertically */
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 60px;
+}
+
+header nav ul li a {
   color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* .talk p { */
+  /* font-size: 1.1rem; Regular text size */
+  /* margin: 5px 0; Space above and below */
+/* } */
+
+.talk-details {
+  display: flex; /* Use flexbox for layout */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.talk-time {
+  width: 100px; /* Set a fixed width for the time column */
+  margin-right: 20px; /* Add some spacing to the right */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: left; /* Optional: Ensure the text is centered inside the box */
+}
+
+.talk-abstract {
+  flex: 1; /* Allow this section to take the remaining space */
+}
+
+.talk p {
+  margin: 0.5rem 0; /* Add margin to paragraphs for spacing */
+}
+
+.talk-notes {
+  font-style: italic; /* Italicize the notes */
+  margin-top: 10px; /* Space above notes */
+}
+
+main {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #284e46;
+  color: white;
+  text-align: center;
+  padding: 0.02rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
